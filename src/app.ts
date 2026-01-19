@@ -9,7 +9,7 @@ export const app = new Hono();
 app.use(
   "/*",
   cors({
-    origin: "http://localhost:3000", // Allow your Next.js frontend
+    origin: "*",
     allowMethods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowHeaders: ["Content-Type", "Authorization"],
     exposeHeaders: ["Content-Length"],
